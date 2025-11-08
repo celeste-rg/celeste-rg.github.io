@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #FFADEC;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #E920A8;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #940353;
+      flex-wrap: wrap;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background: #940353;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .content {
+      display: none;
+      max-width: 600px;
+      text-align: center;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #940353;
+      color: white;
+    }
+
+    /* Responsividad */
+    @media (max-width: 600px) {
+      nav button {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ALOJAMIENTO WEB</h1>
+  </header>
+
+  <nav>
+    <button onclick="mostrarContenido('¿Qué es?')">¿Qué es?</button>
+    <button onclick="mostrarContenido('Importancia')">Importancia</button>
+    <button onclick="mostrarContenido('Características')">Características</button>
+	<button onclick="mostrarContenido('Tipos')">Tipos</button>
+	<button onclick="mostrarContenido('¿Cómo alojar?')">¿Cómo alojar?</button>
+  </nav>
+
+  <main>
+    <div id="¿Qué es?" class="content active">
+      <h2>¿En qué consiste el alojamiento web?</h2>
+      <p>El alojamiento web es un servicio que almacena sitios web o aplicaciones web y los hace fácilmente accesibles desde diversos dispositivos, como computadoras de escritorio, teléfonos móviles y tabletas. Cualquier aplicación web o sitio web suele estar formado por muchos archivos, como imágenes, vídeos, texto y código, que hay que almacenar en ordenadores especiales llamados servidores</p>
+		
+	  <h2>¿Cómo funciona el alojamiento web?</h2>
+	  <p>Al crear una cuenta con el proveedor de alojamiento web, este asigna cierto espacio para el sitio o la aplicación web en el servidor. Puede acceder y administrar este espacio desde el panel de la cuenta de alojamiento. Del mismo modo, obtendrá acceso a otros recursos, como la memoria de acceso aleatorio (RAM), la unidad central de procesamiento (CPU) y el ancho de banda. El porcentaje de recursos del servidor que se obtiene depende del tipo de servicio de alojamiento web que se seleccione.</p>	
+    .</div>
+
+    <div id="Importancia" class="content">
+      <h2>Importancia del alojamiento web</h2>
+		
+      <p><h3>Rendimiento</h3>
+		Una empresa de alojamiento web que administra recursos de hardware para varios sitios web goza de un mayor poder adquisitivo. Invierte en tecnología de vanguardia para que usted disponga de servidores web de alto rendimiento con capacidad de procesamiento, memoria interna y otros recursos de computación. Esto mejora el rendimiento del sitio web, por lo que las páginas se cargan rápidamente para los visitantes.
+		<h3>Fiabilidad</h3>
+		Gracias a los proveedores de servicios de alojamiento web, es posible evitar el estrés que supone el mantenimiento continuo de los servidores. Realizan actualizaciones periódicas del sistema para mantener un alto nivel de seguridad. Al hacerlo, permiten que los recursos de TI queden disponibles, con lo cual es posible centrarse en la entrega de aplicaciones en lugar de en la administración de los servidores.
+		<h3>Soporte técnico</h3>
+		La mayoría de los servicios de alojamiento web ofrecen una asistencia completa para solucionar los problemas de rendimiento. También optimizan la supervisión y el análisis del sitio web, la copia de seguridad y la recuperación de datos, y otras características similares que hacen que el sitio web funcione con mayor fluidez.
+		<h3>Seguridad y cumplimiento</h3>
+		Los servicios de alojamiento web utilizan un enfoque integral para proteger la infraestructura, que incluye medidas físicas, operativas y de software que satisfacen todos los requisitos de cumplimiento.</p>
+    .</div>
+
+    <div id="Características" class="content">
+      <h2>Caracteristicas del alojamiento web</h2>
+      <p><h3>Espacio en disco</h3>
+		El sitio web necesita espacio de almacenamiento para los correos electrónicos, los archivos web, las imágenes y las bases de datos. Al calcular las necesidades de almacenamiento, tenga en cuenta también el crecimiento futuro del sitio web y su tráfico. Un espacio en disco reducido repercute en la experiencia del usuario, por lo que es un factor importante en la selección de un servicio de alojamiento web.
+
+		<h3>Ancho de banda y transferencia de datos</h3>
+		En el ámbito del alojamiento web, los términos ancho de banda y transferencia de datos con frecuencia se utilizan indistintamente. Sin embargo, se trata de dos conceptos diferentes. El ancho de banda se refiere a la cantidad de datos que puede transferir el sitio web a los visitantes a la vez. La transferencia de datos se refiere a la cantidad real de datos que transfiere.Puede concebir el ancho de banda como una tubería. Cuanto más grande sea la tubería, más agua podrá pasar por ella. Sin embargo, por diversas razones, es posible que no se utilice la capacidad total de la tubería. La transferencia de datos es como la cantidad real de agua que pasa por la tubería en un periodo determinado.
+
+		<h3>Cuentas de correo electrónico</h3>
+		Muchos planes de alojamiento web incluyen una cuenta de correo electrónico. Puede vincular la dirección de correo electrónico con el nombre del sitio web. Por ejemplo, si el nombre del sitio web es example.com, la dirección de correo electrónico será yourname@example.com. A continuación se indican los principales tipos de cuentas de correo electrónico.
+
+		<h3>POP3</h3>
+		Las cuentas POP3 proporcionan un espacio en el servidor para almacenar los correos electrónicos, a los que se puede acceder directamente o mediante el programa de cliente de correo electrónico.
+
+		<h3>Reenvío de correo</h3>
+		Las cuentas de reenvío de correo redirigen los correos electrónicos a otra dirección de correo electrónico. Esta cuenta puede ser una cuenta de correo electrónico personal con un proveedor de servicios de correo electrónico o una cuenta de terceros que administre los correos electrónicos del sitio web por usted.
+
+		<h3>Alias</h3>
+		Algunos alojamientos web cuentan con planes de correo electrónico que puede utilizar para crear varios alias o nombres de cuentas de correo electrónico sin necesidad de crear una cuenta POP3 completa. Por ejemplo, es posible que desee mostrar las direcciones de ventas@, soporte@ y pedidos@ en diferentes páginas del sitio web. En lugar de tener varias cuentas POP3 que deben ser revisadas y administradas, podría redirigir todo a una sola bandeja de entrada.
+
+		<h3>Acceso FTP</h3>
+		FTP se refiere a la transferencia e intercambio de archivos del sitio web. Numerosos sitios web tienen documentos, como archivos PDF o de imagen, para que los internautas los descarguen. La empresa de alojamiento web utiliza el acceso FTP para prestar este servicio.</p>
+    .</div>
+	  
+	<div id="Tipos" class="content">
+      <h2>Tipos de servicios de alojamiento web</h2>
+      <p><h3>Alojamiento compartido</h3>
+		Los proveedores de servicios de alojamiento compartido ofrecen un acceso compartido al servidor web. Se obtiene acceso al directorio o carpeta para los archivos del sitio web, pero se comparten los recursos del servidor, como el espacio en disco, la potencia de la CPU y la memoria RAM. En el caso de los proveedores de alojamiento compartido, es posible que cientos de sitios o aplicaciones web utilicen el mismo servidor. Sin embargo, otros sitios web no verán sus datos internos puesto que ningún usuario tiene acceso al directorio principal o raíz.
+		
+		<h3>Alojamiento en servidor privado virtual (VPS)</h3>
+		Los proveedores de alojamiento de servidores privados virtuales (VPS) utilizan un servidor privado virtual para conceder un acceso más exclusivo a los recursos del servidor. La tecnología de alojamiento en VPS particiona el servidor físico para crear pequeños servidores virtuales que se pueden alquilar. Al utilizar servidores privados virtuales, tendrá acceso exclusivo tanto al espacio como a los recursos de computación, como la memoria y la potencia de procesamiento, en el servidor físico. Es posible instalar un sistema operativo en el servidor virtual y disponer de un mayor control sobre el entorno del servidor.
+		
+		<h3>Alojamiento dedicado</h3>
+		Los proveedores de alojamiento dedicado ofrecen acceso al servidor físico completo. Tendrá acceso exclusivo a un servidor dedicado solo para el sitio web. Puede optimizar y controlar el entorno según sus necesidades. Puede particionar este servidor usted mismo para alojar varios dominios en el mismo servidor físico.
+		
+		<h3>Complemento de Java</h3>
+		El complemento de Java establece una conexión entre los navegadores más conocidos y la plataforma Java de modo que sea posible ejecutar los applets del sitio web dentro de un navegador de escritorio.
+		
+		<h3>Alojamiento en la nube</h3>
+		Los proveedores de alojamiento en la nube utilizan el uso compartido de recursos y el escalado para reducir los costos de alojamiento web y mejorar el rendimiento del sitio. Se obtiene un acceso compartido a un clúster de servidores, y el proveedor de alojamiento en la nube replica automáticamente los archivos del sitio web en varios servidores. Si uno de los servidores en la nube se encuentra ocupado, el proveedor de alojamiento dirige automáticamente el tráfico a otro servidor. Esto mejora considerablemente el rendimiento del sitio web sin aumentar los costos continuos. 
+		
+		</p>
+    .</div>
+	  
+	<div id="¿Cómo alojar?" class="content">
+      <h2>¿Cómo alojar?</h2>
+      <p><h3>¿Cómo alojar sitios web con instancias de servidor autoadministradas?</h3>
+
+		<h3>Control total del alojamiento web</h3>
+		Para administrar completamente los servidores de sus sitios web, puede configurar y controlar las instancias de Amazon EC2 y ejecutar varios sitios web y aplicaciones web. Si bien esta opción proporciona el mayor grado de control sobre su alojamiento web, es compleja y puede configurarse incorrectamente con facilidad, lo que requiere conocimientos especializados.
+
+		<h3>Alojamiento de sitios web estáticos de bajo costo</h3>
+		Amazon S3 es una opción si tiene un sitio web simple y estático que no cambia con frecuencia. Es económico y relativamente sencillo de configurar para alojar un sitio web, pero tendrá que habilitar HTTPS.
+		
+		<h3>¿Cómo alojar un sitio web con un VPS semiadministrado?</h3>
+		El VPS de Amazon Lightsail es la forma más sencilla de autoadministrar servidores web en AWS, ya que ofrece instancias de servidores privados virtuales (VPS), contenedores, almacenamiento, bases de datos, etc. Es la mejor opción de alojamiento web de VPS para organizaciones pequeñas y medianas que buscan un alojamiento web sencillo en AWS con espacio para crecer.
+		
+		<h3>¿Cómo alojar un sitio web con una arquitectura sin servidor?</h3>
+		AWS Amplify le permite implementar y alojar aplicaciones web de una sola página y sitios web estáticos sin administrar los recursos. Se trata de una colección de bibliotecas y servicios en la nube para el desarrollo de aplicaciones full stack, cuyo alojamiento se activa mediante canalizaciones Git de CI/CD, lo que permite su uso en una amplia gama de proyectos.
+		</p>
+    .</div>
+	  
+	  
+  </main>
+
+  <footer>
+    <p>Romero Gómez Celeste</p>
+  </footer>
+
+  <script>
+    function mostrarContenido(id) {
+      const contenidos = document.querySelectorAll('.content');
+      contenidos.forEach(c => c.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
